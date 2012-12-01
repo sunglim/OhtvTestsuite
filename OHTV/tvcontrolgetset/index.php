@@ -122,7 +122,6 @@ function govid() {
   elem.style.height = '720px';
   elem.innerHTML = ihtml;
   var succss = false;
-  showStatus(succss, 'TV Screen should appear in the center.',true);
   try {
     var videlem = document.getElementById('video');
     if (videlem) {
