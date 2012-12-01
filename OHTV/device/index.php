@@ -37,7 +37,7 @@ function runStep(name) {
   if (name=='getDuid') {
     try {
       var deviceDom = document.getElementById('deviceObj');
-      showStatus(true, 'GetDUID() returns ( ' + deviceDom.getDUID() + ' )');
+      showStatus(true, 'GetDUID() returns ( ' + deviceDom.GetDUID() + ' )');
     } catch (e) {
       showStatus(false, 'cannot determine GetDUID ');
     }
