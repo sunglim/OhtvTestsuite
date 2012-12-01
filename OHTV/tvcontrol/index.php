@@ -102,7 +102,7 @@ function runStep(name) {
 
 <div style="left: 0px; top: 0px; width: 1280px; height: 720px; background-color: #132d48;" />
 
-<?php echo videoObject(100, 480, 320, 180) ?>;
+<?php echo videoObject(100, 480, 320, 180) ?>
 
 <div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">OHTV tests</div>
 <div id="instr" class="txtdiv" style="left: 700px; top: 110px; width: 400px; height: 360px;"></div>
