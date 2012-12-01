@@ -115,7 +115,7 @@ function govid() {
     // ignore
   }
 
-  var ihtml = '<object id="video" type="x-ohtv-tvcontrol" style="position: absolute; left: 600px; top: 250px; width: 160px; height: 90px;"><'+'/object>';
+  var ihtml = '<object id="video" type="application/x-ohtv-tvcontrol" style="position: absolute; left: 600px; top: 250px; width: 160px; height: 90px;"><'+'/object>';
   elem.style.left = '0px';
   elem.style.top = '0px';
   elem.style.width = '1280px';
