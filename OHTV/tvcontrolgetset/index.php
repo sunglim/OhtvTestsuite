@@ -52,7 +52,7 @@ function runStep(name) {
   } else if (name=='getSource') {
     try{
       var source = document.getElementById('video').getSource();
-      showStatus(true, 'tvcontrol.getSource should returns '+source+'. Check TV Screen',true);
+      showStatus(true, 'tvcontrol.getSource() returns ( '+source+' ). Check TV Screen is visible(=1) or invisible(=0)',true);
     }catch(e){
         showStatus(false, 'unable to determine tvcontrol.getSource() ');
     }
@@ -60,8 +60,16 @@ function runStep(name) {
     govid();
   } else if (name=='vidstop') {
     try {
-      document.getElementById('video').stop();
+      document.getElementById('video').setSource(0);
       showStatus(true, 'Video should now be stopped.');
+    } catch (e) {
+      showStatus(false, 'Stopping video failed.');
+    }
+    showVideoPosition(false);
+  } else if (name=='setSource1') {
+    try {
+      document.getElementById('video').setSource(1);
+      showStatus(true, 'Video should now be played again.');
     } catch (e) {
       showStatus(false, 'Stopping video failed.');
     }
@@ -154,16 +162,14 @@ function govid() {
 <ul id="menu" class="menu" style="left: 100px; top: 100px;">
   <li name="vidbroadcast">Test 1: start broadcast video</li>
   <li name="getSource">Test 2: get cururent getSource()</li>
-  <li name="lcenter">Test 3: lower center</li>
-  <li name="full">Test 4: fullscreen (background)</li>
-  <li name="vidclip">Test 5: video clipping test</li>
-  <li name="vidstop">Test 6: stop video</li>
-  <li name="vidstream">Test 7: start streaming video</li>
-  <li name="lright">Test 8: lower right</li>
+  <li name="vidstop">Test 3: setSource(0) </li>
+  <li name="getSource">Test 4: get cururent getSource() again</li>
+  <li name="setSource1">Test 5: setSource(1) </li>
+  <li name="getSource">Test 6: get cururent getSource() again</li>
+  <li name="full">Test 7: fullscreen (background)</li>
+  <li name="vidclip">Test 8: video resize test</li>
   <li name="togglefs">Test 9: toggle fullscreen mode</li>
-  <li name="lcenter">Test 10: lower center</li>
   <li name="full">Test 11: fullscreen (background)</li>
-  <li name="vidbroadcast">Test 12: start broadcast video</li>
   <li name="exit">Return to test menu</li>
 </ul>
 <div id="status" style="left: 700px; top: 480px; width: 400px; height: 200px;"></div>
