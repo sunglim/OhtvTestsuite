@@ -55,6 +55,13 @@ function runStep(name) {
     } catch (e) {
       showStatus(false, 'cannot determine GetModelCode() ');
     }
+  } else if (name=='getProfileInfo') {
+    try {
+      var deviceDom = document.getElementById('deviceObj');
+      showStatus(true, 'GetProfileInfo() returns ( ' + deviceDom.GetProfileInfo() + ' )');
+    } catch (e) {
+      showStatus(false, 'cannot determine GetProfileInfo() ');
+    }
   }
 }
 
@@ -73,6 +80,7 @@ function runStep(name) {
   <li name="getDuid">Test 1: GetDUID</li>
   <li name="getFirmware">Test 2: GetFirmware</li>
   <li name="getModelCode">Test 3: GetModelCode</li>
+  <li name="getProfileInfo">Test 4: GetProfileInfo</li>
   <li name="exit">Return to test menu</li>
 </ul>
 <div id="status" style="left: 700px; top: 480px; width: 400px; height: 200px;"></div>
