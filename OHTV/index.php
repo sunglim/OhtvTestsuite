@@ -101,6 +101,7 @@ In case you have questions and/or comments, you can reach us at sungguk.lim@lge.
   <li name="device" descr="Get and Set Device Info.">Get device info</li>
   <li name="tvcontrol" descr="Get properties of tvcontrol object.">Get TV Control properties</li>
   <li name="tvcontrolgetset" descr="getSource and setSource">Get and set TV Control source</li>
+  <li name="network" descr="Get and Check Network">Get and Check Network</li>
 
   <li name="channels" descr="Performs channel operations on the video/broadcast object.">Get and set channel</li>
   <li name="channellist" descr="Accesses the ChannelList class.">Channel list</li>
