@@ -37,7 +37,7 @@ function runStep(name) {
   if (name=='getMac') {
     try {
       var networkDom = document.getElementById('networkObj');
-      showStatus(true, 'GetMac(0) returns ( ' + networkDom.GetMAC(0) + ' ), GetMac(1) returns ( '+ networkDom.GetMAC(1) + ' ), GetMac() returns ( '+networkDom.GetMAC() +' )');
+      showStatus(true, 'GetMAC(0) returns ( ' + networkDom.GetMAC(0) + ' ), GetMAC(1) returns ( '+ networkDom.GetMAC(1) + ' ), GetMAC() returns ( '+networkDom.GetMAC() +' )');
     } catch (e) {
       showStatus(false, 'cannot determine GetMac');
     }
