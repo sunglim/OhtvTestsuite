@@ -37,7 +37,7 @@ function runStep(name) {
   if (name=='getMac') {
     try {
       var networkDom = document.getElementById('networkObj');
-      showStatus(true, 'GetMac(0) returns ( ' + networkDom.GetMac(0) + ' ), GetMac(1) returns ( '+ networkDom.GetMac(1) + ' ), GetMac() returns ( '+networkDom.GetMac() +' )');
+      showStatus(true, 'GetMac(0) returns ( ' + networkDom.GetMAC(0) + ' ), GetMac(1) returns ( '+ networkDom.GetMAC(1) + ' ), GetMac() returns ( '+networkDom.GetMAC() +' )');
     } catch (e) {
       showStatus(false, 'cannot determine GetMac');
     }
@@ -56,7 +56,7 @@ function runStep(name) {
 <div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">LG OHTV tests - Device</div>
 <div id="instr" class="txtdiv" style="left: 700px; top: 110px; width: 400px; height: 360px;"></div>
 <ul id="menu" class="menu" style="left: 100px; top: 100px;">
-  <li name="getMac">Test 1: GetMac()</li>
+  <li name="getMac">Test 1: GetMAC()</li>
   <li name="exit">Return to test menu</li>
 </ul>
 <div id="status" style="left: 700px; top: 480px; width: 400px; height: 200px;"></div>
