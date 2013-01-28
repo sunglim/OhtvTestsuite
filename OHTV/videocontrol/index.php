@@ -140,7 +140,6 @@ function testPos(scnds) {
 <div style="left: 0px; top: 0px; width: 1280px; height: 720px; background-color: #132d48;" />
 
 <object id="video" type="video/mp4" style="position: absolute; left: 700px; top: 220px; width: 320px; height: 180px;"></object>
-<?php echo appmgrObject(); ?>
 
 <div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">MIT-xperts HBBTV tests</div>
 <div id="instr" class="txtdiv" style="left: 700px; top: 110px; width: 400px; height: 360px;"></div>
