@@ -40,19 +40,6 @@ function runStep(name) {
     req.abort();
   }
   stopVideo();
-  if (name=='queue') {
-    try {
-      playVideo('video/mp4', 'http://itv.ard.de/video/trailer.php', false);
-      var videlem = document.getElementById('video');
-      videlem.queue('http://bilder.rtl.de/tt_hd/trailer_hotelinspektor.mp4');
-      videlem.queue(null); // remove previous element from queue
-      videlem.queue('http://bilder.rtl.de/tt_hd/090902_hdtt_f1_monza_streckenanimation_.mp4');
-      showStatus(true, 'First Das Erste trailer should be played, followed by a queued formula 1 video clip. An Hotelinspektor trailer should not be played.');
-    } catch (e) {
-      showStatus(false, 'Queuing video failed.');
-    }
-    return;
-  }
   req = new XMLHttpRequest();
   req.onreadystatechange = function() {
     if (req.readyState!=4 || req.status!=200) return;
@@ -116,20 +103,17 @@ function playVideo(mtype, murl, registerlistener) {
 <div style="left: 0px; top: 0px; width: 1280px; height: 720px; background-color: #132d48;" />
 
 <div id="vidcontainer" style="left: 0px; top: 0px; width: 1280px; height: 720px;"></div>
-<?php echo appmgrObject(); ?>
 
-<div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">MIT-xperts HBBTV tests</div>
+<div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">LG OHTV tests</div>
 <div id="instr" class="txtdiv" style="left: 700px; top: 110px; width: 400px; height: 360px;"></div>
 <ul id="menu" class="menu" style="left: 100px; top: 100px;">
-  <li name="ardepg">ARD EPG video (MP4)</li>
-  <li name="zdf">ZDF video (MP4+redirect)</li>
+  <li name="hls_video_live">Unified Video (HLS)</li>
   <li name="rtl">RTL video (MP4)</li>
   <li name="mpegts">Test video (TS)</li>
   <li name="audiomp3">Audio stream (MP3)</li>
   <li name="audiomp4">Test audio (MP4)</li>
   <li name="irthd">IRT test (HD, MP4)</li>
   <li name="tsstream">Live stream test (TS, no seeking!)</li>
-  <li name="queue">Video queuing test</li>
   <li name="nacamar1">Nacamar live stream1 (TS, no seeking!)</li>
   <li name="exit">Return to test menu</li>
 </ul>
