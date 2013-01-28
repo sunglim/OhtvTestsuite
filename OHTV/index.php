@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $ROOTDIR='.';
 require("$ROOTDIR/base.php");
 $referer = $_SERVER['HTTP_REFERER'];
@@ -81,7 +81,7 @@ function closeApp() {
 </script>
 
 </head><body>
-
+<object id='deviceObj' type='application/x-ohtv-device'/>
 <div style="left: 0px; top: 0px; width: 1280px; height: 720px; background-color: #132d48;" />
 <div class="txtdiv txtlg" style="left: 111px; top: 60px; width: 500px; height: 30px;">LG OHTV testsuite</div>
 <div class="txtdiv" style="left: 111px; top: 640px; width: 500px; height: 30px;">Testsuite release: <span id="relid"></span></div>
@@ -103,6 +103,7 @@ In case you have questions and/or comments, you can reach us at hbbtv-dev@lge.co
   <li name="tvcontrolgetset" descr="getSource and setSource">Get and set TV Control source</li>
   <li name="network" descr="Get and Check Network">Get and Check Network</li>
 
+  <li name="ime" descr="Check IME function">Check IME function</li>
   <li name="channels" descr="Performs channel operations on the video/broadcast object.">Get and set channel</li>
   <li name="channellist" descr="Accesses the ChannelList class.">Channel list</li>
   <li name="videoscale" descr="Exchange the video object on the page, switch between broadcast and streaming video. For both, scale the video object.">Video swapping and scaling</li>
