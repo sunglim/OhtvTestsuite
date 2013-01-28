@@ -76,23 +76,7 @@ function runStep(name) {
     } catch (e) {
       showStatus(false,'cannot determine currentMinorChannelNumber');
     }
-  } else if (name=='fullScreen') {
-    try{
-      var video = document.getElementById('video');
-      if(video.fullScreen === undefined){
-        showStatus(false,'cannot determine fullScreen');
-        return;
-      }
-      if(video.fullScreen == true){
-        showStatus(false,'fullScreen returns : ' + video.fullScreen + ' fullScreen should return false');
-        return;
-      }
-      showStatus(true,'fullScreen returns ' + video.fullScreen);
-    } catch (e) {
-      showStatus(false,'cannot determine fullScreen');
-    }
-
-  } 
+  }
 }
 
 //]]>
@@ -110,8 +94,7 @@ function runStep(name) {
   <li name="width_height">Test 1: width and height property</li>
   <li name="majorNumber">Test 2: currentMajorChannelNumber property</li>
   <li name="minorNumber">Test 3: currentMinorChannelNumber property</li>
-  <li name="fullScreen">Test 4: fullScreen property</li>
-  <li name="getSource">Test 5: getSource()</li>
+  <li name="getSource">Test 4: getSource()</li>
   <li name="exit">Return to test menu</li>
 </ul>
 <div id="status" style="left: 700px; top: 480px; width: 400px; height: 200px;"></div>
