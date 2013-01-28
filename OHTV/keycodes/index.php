@@ -30,7 +30,7 @@ window.onload = function() {
     // ignore
   }
   updateMsg();
-  setKeyset(0x1+0x2+0x4+0x8+0x10+0x20+0x100);
+  //setKeyset(0x1+0x2+0x4+0x8+0x10+0x20+0x100);
 };
 
 function handleKeyCode(kc) {
@@ -67,8 +67,6 @@ function updateMsg(success) {
 </head><body>
 
 <div style="left: 0px; top: 0px; width: 1280px; height: 720px; background-color: #132d48;" />
-
-<?php echo appmgrObject(); ?>
 
 <div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">MIT-xperts HBBTV tests</div>
 <div id="instr" class="txtdiv" style="left: 700px; top: 110px; width: 400px; height: 360px;"></div>
