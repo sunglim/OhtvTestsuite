@@ -93,7 +93,7 @@ function closeApp() {
 </div>
 <div class="txtdiv" style="left: 700px; top: 270px; width: 450px; height: 400px;"><u>Instructions:</u><br />
 Please select the desired test using the cursor keys, then press OK. After that, test-specific instructions will appear. More information is available under &quot;About / Imprint&quot;.<br />
-In case you have questions and/or comments, you can reach us at sungguk.lim@lge.com<br /><br />
+In case you have questions and/or comments, you can reach us at hbbtv-dev@lge.com<br /><br />
 <u>Test description:</u><br />
 <span id="descr">&#160;</span>
 </div>
