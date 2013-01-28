@@ -13,10 +13,6 @@ function sendContentType() {
 }
 
 function videoObject($left=0, $top=0, $width=1280, $height=720) {
-  if (!isset($_REQUEST['demo'])) {
-    global $ROOTDIR;
-    return '<img id="video" style="position: absolute; left: '.$left.'px; top: '.$top.'px; width: '.$width.'px; height: '.$height.'px;" src="'.$ROOTDIR.'/video.jpg" />';
-  }
   return '<object id="video" type="application/x-ohtv-tvcontrol" style="position: absolute; left: '.$left.'px; top: '.$top.'px; width: '.$width.'px; height: '.$height.'px;"></object>';
 }
 
