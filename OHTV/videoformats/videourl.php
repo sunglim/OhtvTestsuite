@@ -16,18 +16,19 @@ if ($id=='ardepg') {
   echo 'audio/mp4#http://itv.ard.de/video/audio.php';
 } else if ($id=='irthd') {
   echo 'video/mp4#http://itv.ard.de/video/irthd.mp4';
-} else if ($id=='zdf') {
-  $data = $json->decode(file_get_contents('http://itv.mit-xperts.com/zdfmediathek/dyn/list.php?type=11'));
-  $id = rawurlencode($data[1][0][0]);
-  $data = $json->decode(file_get_contents('http://itv.mit-xperts.com/zdfmediathek/dyn/detail.php?id='.$id));
-  $url = $data[1][1][4];
-  echo 'video/mp4#'.$url;
 } else if ($id=='tsstream') {
   echo 'video/mpeg#http://itv.ard.de/video/livestream.php';
 } else if ($id=='gundl1') {
   echo 'video/mpeg#http://hbbtv.olympia.gl-systemhaus.de/olympia1.ts';
 } else if ($id=='nacamar1') {
   echo 'video/mpeg#http://hbbtv.nacamar.c.nmdn.net/nacamar/test';
+} else if ($id=='hls_video_live') {
+  $r = new HttpRequest('http://IPADDRESS/test/stream_url.jsp', HttpRequest::METH_POST);
+  try {
+      echo $r->send()->getBody();
+  } catch (HttpException $ex) {
+      echo $ex;
+  }
 } else {
   echo 'Unknown ID';
 }
