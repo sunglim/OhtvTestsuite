@@ -91,7 +91,7 @@ function closeApp() {
   <div class="txtdiv" style="left: 10px; top: 94px; width: 500px; height: 30px; color: #000000;">OHTV testsuite is modified and being maintained by :</div>
   <div class="imgdiv" style="left: 10px; top: 124px; width: 356px; height: 54px; background-image: url(lg_logo.gif);"></div>
 </div>
-<div class="txtdiv" style="left: 700px; top: 270px; width: 450px; height: 500px;"><u>Instructions:</u><br />
+<div class="txtdiv" style="left: 700px; top: 270px; width: 450px; height: 400px;"><u>Instructions:</u><br />
 Please select the desired test using the cursor keys, then press OK. After that, test-specific instructions will appear. More information is available under &quot;About / Imprint&quot;.<br />
 In case you have questions and/or comments, you can reach us at sungguk.lim@lge.com<br /><br />
 <u>Test description:</u><br />
