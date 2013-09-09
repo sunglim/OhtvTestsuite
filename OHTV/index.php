@@ -20,6 +20,7 @@ window.onload = function() {
   initApp();
   nameselect('<?php echo $referer; ?>');
   document.getElementById('relid').innerHTML = releaseinfo;
+  document.getElementById('deviceObj').SetAppMode(3);
 };
 function nameselect(snam) {
   if (!snam) return;
