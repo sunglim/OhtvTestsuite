@@ -84,7 +84,7 @@ function closeApp() {
 </head><body>
 <object id='deviceObj' type='application/x-ohtv-device'/>
 <div style="left: 0px; top: 0px; width: 1280px; height: 720px; background-color: #132d48;" />
-<div class="txtdiv txtlg" style="left: 111px; top: 60px; width: 500px; height: 30px;">LG OHTV testsuite</div>
+<div class="txtdiv txtlg" style="left: 111px; top: 60px; width: 500px; height: 30px;">테스트 한글 LG OHTV testsuite</div>
 <div class="txtdiv" style="left: 111px; top: 640px; width: 500px; height: 30px;">Testsuite release: <span id="relid"></span></div>
 <div style="left: 690px; top: 56px; width: 590px; height: 210px; background-color: #ffffff;">
   <div class="txtdiv" style="left: 10px; top: 4px; width: 500px; height: 30px; color: #000000;">OHTV testsuite platform is made by :</div>
@@ -94,7 +94,7 @@ function closeApp() {
 </div>
 <div class="txtdiv" style="left: 700px; top: 270px; width: 450px; height: 400px;"><u>Instructions:</u><br />
 Please select the desired test using the cursor keys, then press OK. After that, test-specific instructions will appear. More information is available under &quot;About / Imprint&quot;.<br />
-In case you have questions and/or comments, you can reach us at hbbtv-dev@lge.com<br /><br />
+In case you have questions and/or comments, you can reach us at ohtv-dev@lge.com<br /><br />
 <u>Test description:</u><br />
 <span id="descr">&#160;</span>
 </div>

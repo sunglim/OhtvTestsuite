@@ -47,8 +47,6 @@ function runStep(name) {
     e.style.height = '180px';
     setvidsize(-64, -36, 448, 252, 'on the right of the screen (vertically centered, only partially visible).');
     markVideoPosition(700, 260, 320, 180);
-  } else if (name=='togglefs') {
-    togglefullscreen();
   } else if (name=='getSource') {
     try{
       var source = document.getElementById('video').getSource();
@@ -101,18 +99,6 @@ function showVideoPosition(isshowing) {
   e.style.display = isshowing ? 'block' : 'none';
   e = document.getElementById('vidposborder');
   e.style.display = isshowing ? 'block' : 'none';
-}
-function togglefullscreen() {
-  fullscreen = !fullscreen;
-  var oldsel = selected;
-  try {
-    document.getElementById('video').setFullScreen(fullscreen);
-    showStatus(true, 'Setting fullScreen('+fullscreen+') mode succeeded');
-  } catch (e) {
-    showStatus(false, 'Setting fullScreen('+fullscreen+') mode failed');
-  }
-  menuSelect(oldsel);
-  showVideoPosition(!fullscreen);
 }
 function govid() {
   var elem = document.getElementById('vidcontainer');
@@ -168,8 +154,6 @@ function govid() {
   <li name="getSource">Test 6: get cururent getSource() again</li>
   <li name="full">Test 7: fullscreen (background)</li>
   <li name="vidclip">Test 8: video resize test</li>
-  <li name="togglefs">Test 9: toggle fullscreen mode</li>
-  <li name="full">Test 11: fullscreen (background)</li>
   <li name="exit">Return to test menu</li>
 </ul>
 <div id="status" style="left: 700px; top: 480px; width: 400px; height: 200px;"></div>
