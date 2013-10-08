@@ -70,13 +70,6 @@ function setDescr() {
   document.getElementById('descr').innerHTML = opts[selected].getAttribute('descr');
 }
 function closeApp() {
-  try {
-    var app = document.getElementById('appmgr').getOwnerApplication(document);
-    app.destroyApplication();
-    return;
-  } catch (e) {
-    alert('Cannot destroy application');
-  }
 }
 //]]>
 </script>
@@ -103,19 +96,13 @@ In case you have questions and/or comments, you can reach us at ohtv-dev@lge.com
   <li name="tvcontrol" descr="Get properties of tvcontrol object.">Get TV Control properties</li>
   <li name="tvcontrolgetset" descr="getSource and setSource">Get and set TV Control source</li>
   <li name="network" descr="Get and Check Network">Get and Check Network</li>
-
-  <li name="ime" descr="Check IME function">Check IME function</li>
-  <li name="channels" descr="Performs channel operations on the video/broadcast object.">Get and set channel</li>
-  <li name="channellist" descr="Accesses the ChannelList class.">Channel list</li>
+  <li name="ime" descr="Check IME function">Check IME function(dev)</li>
   <li name="videoscale" descr="Exchange the video object on the page, switch between broadcast and streaming video. For both, scale the video object.">Video swapping and scaling</li>
+<!-- TODO: We need to migrate belows.
   <li name="videocontrol" descr="Sets the play speed and play position on a streaming video.">Video controls</li>
   <li name="playerevents" descr="Checks if streaming video playback sends correect events.">Streaming video playback events</li>
   <li name="videoformats" descr="Check whether videos from various applications run on your device.">Streaming video/audio formats</li>
-  <li name="videocomponents" descr="Retrieval of audio/video/subtitle components, as well as selecting and unselecting them.">AVComponents in video/broadcast</li>
-  <li name="memoryaudio" descr="Playback audio from memory (for instant playback, see OIPF DAE 7.14.10).">Memory audio</li>
   <li name="videobackground" descr="Broadcast video in background without own video object.">Broadcast in background</li>
-  <li name="appmanager" descr="Start applications, destroy application.">Application manager</li>
-  <li name="eitevent" descr="Retrieve EIT present and following events.">EIT present/following</li>
   <li name="keycodes" descr="Check for correctly defined key codes and key events.">Key codes / key events</li>
   <li name="keyset" descr="Set keyset mask for user-input keys.">Keyset mask</li>
   <li name="keypress" descr="Check whether keypress event is sent for non-unicode characters.">Keypress events</li>
@@ -130,10 +117,6 @@ In case you have questions and/or comments, you can reach us at ohtv-dev@lge.com
   <li name="datetime" descr="Check whether box has correct date and time.">Date and time</li>
   <li name="animation" descr="Check the performance of a Set-Top-Box graphics renderer.">Animation</li>
   <li name="animgif" descr="Check animated GIF.">Animated GIF</li>
-  <li name="streamevent" descr="Receive StreamEvents.">StreamEvent</li>
-  <li name="dvburl" descr="Access DSM-CC via dvb:// URLs.">dvb URLs</li>
-  <li name="exit" descr="End this application and return to ARD Start.">&gt;&gt;&gt;Exit application&lt;&lt;&lt;</li>
-</ul>
-
+-->
 </body>
 </html>
