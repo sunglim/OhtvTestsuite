@@ -39,14 +39,6 @@ function runStep(name) {
   showStatus(true, '');
   if (name=='full') {
     setvidsize(0, 0, 1280, 720, 'fullscreen in the background.');
-  } else if (name=='vidclip') {
-    var e = document.getElementById('vidcontainer');
-    e.style.left = '700px';
-    e.style.top = '260px';
-    e.style.width = '320px';
-    e.style.height = '180px';
-    setvidsize(-64, -36, 448, 252, 'on the right of the screen (vertically centered, only partially visible).');
-    markVideoPosition(700, 260, 320, 180);
   } else if (name=='getSource') {
     try{
       var source = document.getElementById('video').getSource();
@@ -153,7 +145,6 @@ function govid() {
   <li name="setSource1">Test 5: setSource(1) </li>
   <li name="getSource">Test 6: get cururent getSource() again</li>
   <li name="full">Test 7: fullscreen (background)</li>
-  <li name="vidclip">Test 8: video resize test</li>
   <li name="exit">Return to test menu</li>
 </ul>
 <div id="status" style="left: 700px; top: 480px; width: 400px; height: 200px;"></div>
