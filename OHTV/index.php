@@ -97,9 +97,9 @@ In case you have questions and/or comments, you can reach us at ohtv-dev@lge.com
   <li name="tvcontrolgetset" descr="getSource and setSource">Get and set TV Control source</li>
   <li name="network" descr="Get and Check Network">Get and Check Network</li>
   <li name="ime" descr="Check IME function">Check IME function(dev)</li>
-  <li name="videoscale" descr="Exchange the video object on the page, switch between broadcast and streaming video. For both, scale the video object.">Video swapping and scaling</li>
+  <li name="videocontrol" descr="Sets the play speed and play position on a streaming video.">Video controls(dev)</li>
 <!-- TODO: We need to migrate belows.
-  <li name="videocontrol" descr="Sets the play speed and play position on a streaming video.">Video controls</li>
+  <li name="videoscale" descr="Exchange the video object on the page, switch between broadcast and streaming video. For both, scale the video object.">Video swapping and scaling</li>
   <li name="playerevents" descr="Checks if streaming video playback sends correect events.">Streaming video playback events</li>
   <li name="videoformats" descr="Check whether videos from various applications run on your device.">Streaming video/audio formats</li>
   <li name="videobackground" descr="Broadcast video in background without own video object.">Broadcast in background</li>

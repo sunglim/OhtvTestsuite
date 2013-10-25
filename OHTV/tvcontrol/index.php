@@ -44,7 +44,7 @@ function runStep(name) {
         showStatus(false,'incorrect value returned; width = ' + video.width + ' height = ' + video.height);
       }
     } catch (e) {
-      showStatus(false, 'cannot determine width and height property ');
+      showStatus(false, 'cannot determine width and height properties');
     }
   } else if (name=='getSource') {
     try{
@@ -92,7 +92,7 @@ function runStep(name) {
 
 <?php echo videoObject(100, 480, 320, 180) ?>
 
-<div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">OHTV tests</div>
+<div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">OHTV tests - TV control properties</div>
 <div id="instr" class="txtdiv" style="left: 700px; top: 110px; width: 400px; height: 360px;"></div>
 <ul id="menu" class="menu" style="left: 100px; top: 100px;">
   <li name="width_height">Test 1: width and height property</li>

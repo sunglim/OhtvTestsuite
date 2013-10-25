@@ -135,7 +135,7 @@ function govid() {
   <div id="vidposborder" style="left: 480px; top: 460px; width: 320px; height: 220px; border: 4px solid #ffffff; display: none;"></div>
 </div>
 
-<div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">OHTV tests</div>
+<div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">OHTV tests - TV control get and set</div>
 <div id="instr" class="txtdiv" style="left: 700px; top: 110px; width: 400px; height: 360px;"></div>
 <ul id="menu" class="menu" style="left: 100px; top: 100px;">
   <li name="vidbroadcast">Test 1: start broadcast video</li>
