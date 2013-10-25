@@ -49,7 +49,11 @@ function runStep(name) {
   } else if (name=='getSource') {
     try{
       var video = document.getElementById('video');
-      showStatus(true,'getSource returns ' + video.getSource());
+      if (video.getSource() == 1) {
+        showStatus(true,'getSource returns ' + video.getSource());
+      } else {
+        showStatus(false,'getSource returns ' + video.getSource() + " But should return 1" );
+      }
     } catch (e) {
       showStatus(false,'cannot determine getSource()');
     }
