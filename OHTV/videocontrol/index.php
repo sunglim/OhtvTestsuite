@@ -12,9 +12,7 @@ var testTimeout = false;
 
 window.onload = function() {
   menuInit();
-  initVideo();
   registerKeyEventListener();
-  initApp();
   setInstr('Please run all steps in the displayed order. Navigate to the test using up/down, then press OK to start the test. For some tests, you may need to follow some instructions.');
   showVidState();
 };

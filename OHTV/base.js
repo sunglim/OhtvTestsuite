@@ -15,14 +15,6 @@ function initVideo() {
 }
 
 function initApp() {
-  try {
-    var app = document.getElementById('appmgr').getOwnerApplication(document);
-    app.show();
-    app.activate();
-  } catch (e) {
-    // ignore
-  }
-  setKeyset(0x1+0x2+0x4+0x8+0x10);
 }
 
 function setKeyset(mask) {
