@@ -100,6 +100,7 @@ In case you have questions and/or comments, you can reach us at ohtv-dev@lge.com
   <li name="videocontrol" descr="Sets the play speed and play position on a streaming video.">Video controls(dev)</li>
   <li name="keypress" descr="Check whether keypress event is sent for non-unicode characters.">Keypress events</li>
   <li name="keycodes" descr="Check for correctly defined key codes and key events.">Key codes / key events</li>
+  <li name="mouse" descr="Mouse event test">Mouse</li>
 <!-- TODO: We need to migrate belows.
   <li name="videoscale" descr="Exchange the video object on the page, switch between broadcast and streaming video. For both, scale the video object.">Video swapping and scaling</li>
   <li name="playerevents" descr="Checks if streaming video playback sends correect events.">Streaming video playback events</li>
