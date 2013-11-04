@@ -12,7 +12,6 @@ var req = false;
 window.onload = function() {
   menuInit();
   registerKeyEventListener();
-  initApp();
   setInstr('Please play all audios / videos. Navigate using up/down, then press OK to start the test.');
 };
 function handleKeyCode(kc) {

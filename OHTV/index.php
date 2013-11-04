@@ -101,10 +101,10 @@ In case you have questions and/or comments, you can reach us at ohtv-dev@lge.com
   <li name="keypress" descr="Check whether keypress event is sent for non-unicode characters.">Keypress events</li>
   <li name="keycodes" descr="Check for correctly defined key codes and key events.">Key codes / key events</li>
   <li name="mouse" descr="Mouse event test">Mouse</li>
+  <li name="videoformats" descr="Check whether videos from various applications run on your device.">Streaming video/audio formats</li>
 <!-- TODO: We need to migrate belows.
   <li name="videoscale" descr="Exchange the video object on the page, switch between broadcast and streaming video. For both, scale the video object.">Video swapping and scaling</li>
   <li name="playerevents" descr="Checks if streaming video playback sends correect events.">Streaming video playback events</li>
-  <li name="videoformats" descr="Check whether videos from various applications run on your device.">Streaming video/audio formats</li>
   <li name="videobackground" descr="Broadcast video in background without own video object.">Broadcast in background</li>
   <li name="keyset" descr="Set keyset mask for user-input keys.">Keyset mask</li>
   <li name="capabilities" descr="Check the application/oipfCapabilities object.">OIPF Capabilities</li>
