@@ -39,7 +39,7 @@ function runStep(name) {
   if (name=='IsLogin_LGTV') {
     try {
       var loginId = deviceDom.IsLogin_LGTV();
-      if (loginId == null) {
+      if (loginId !== null) {
         showStatus(true, 'IsLogin_LGTV() returns ( ' + deviceDom.IsLogin_LGTV() + ' )');
       } else {
         showStatus(true, 'IsLogin_LGTV() returns ( null  )');
