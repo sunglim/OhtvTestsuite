@@ -94,6 +94,7 @@ function showStatus(succss, txt, cannotDetermine) {
 }
 
 function setInstr(txt) {
-  document.getElementById('instr').innerHTML = txt;
+  //TODO(sunglim) : shorten the txt value.
+  //document.getElementById('instr').innerHTML = txt;
 }
 

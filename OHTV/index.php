@@ -101,10 +101,12 @@ In case you have questions and/or comments, you can reach us at ohtv-dev@lge.com
   <li name="keypress" descr="Check whether keypress event is sent for non-unicode characters.">Keypress events</li>
   <li name="keycodes" descr="Check for correctly defined key codes and key events.">Key codes / key events</li>
   <li name="mouse" descr="Mouse event test">Mouse</li>
+  <li name="mousescroll" descr="Mouse Wheel event test">Mouse scroll</li>
   <li name="videoformats" descr="Check whether videos from various applications run on your device.">Streaming video/audio formats</li>
+  <li name="playerevents" descr="Checks if streaming video playback sends correect events.">Streaming video playback events</li>
+  <li name="useragent" descr="Validate user agent.">User agent</li>
 <!-- TODO: We need to migrate belows.
   <li name="videoscale" descr="Exchange the video object on the page, switch between broadcast and streaming video. For both, scale the video object.">Video swapping and scaling</li>
-  <li name="playerevents" descr="Checks if streaming video playback sends correect events.">Streaming video playback events</li>
   <li name="videobackground" descr="Broadcast video in background without own video object.">Broadcast in background</li>
   <li name="keyset" descr="Set keyset mask for user-input keys.">Keyset mask</li>
   <li name="capabilities" descr="Check the application/oipfCapabilities object.">OIPF Capabilities</li>
@@ -114,7 +116,6 @@ In case you have questions and/or comments, you can reach us at ohtv-dev@lge.com
   <li name="fontrendering" descr="Check whether the device performs correct font rendering.">Font rendering</li>
   <li name="clientssl" descr="Check support for client SSL certificates.">Client SSL certificate</li>
   <li name="cookies" descr="Store and read cookies in JavaScript.">Cookies</li>
-  <li name="useragent" descr="Validate user agent.">User agent</li>
   <li name="datetime" descr="Check whether box has correct date and time.">Date and time</li>
   <li name="animation" descr="Check the performance of a Set-Top-Box graphics renderer.">Animation</li>
   <li name="animgif" descr="Check animated GIF.">Animated GIF</li>

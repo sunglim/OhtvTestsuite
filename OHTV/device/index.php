@@ -4,6 +4,7 @@ require("$ROOTDIR/base.php");
 sendContentType();
 openDocument();
 
+  $uagent = $_SERVER['HTTP_USER_AGENT'];
 ?>
 <script type="text/javascript">
 //<![CDATA[
@@ -62,6 +63,9 @@ function runStep(name) {
     } catch (e) {
       showStatus(false, 'cannot determine GetProfileInfo() ');
     }
+  } else if (name=='useragent') {
+    var ua = '<?php echo $uagent ?>';
+    showStatus(true, 'useragent returns [[[ ' + ua + ' ]');
   }
 }
 
@@ -81,6 +85,7 @@ function runStep(name) {
   <li name="getFirmware">Test 2: GetFirmware</li>
   <li name="getModelCode">Test 3: GetModelCode</li>
   <li name="getProfileInfo">Test 4: GetProfileInfo</li>
+  <li name="useragent">Test 5: Useragent</li>
   <li name="exit">Return to test menu</li>
 </ul>
 <div id="status" style="left: 700px; top: 480px; width: 400px; height: 200px;"></div>

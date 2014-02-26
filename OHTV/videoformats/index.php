@@ -66,13 +66,22 @@ function stopVideo() {
       // ignore
     }
   }
-  elem.innerHTML = '';
+  // TODO(sunglim) : temp removed
+  //elem.innerHTML = '';
 }
 function playVideo(mtype, murl, registerlistener) {
   setInstr('Playing '+murl+' ('+mtype+')...');
   var elem = document.getElementById('vidcontainer');
-  var ihtml = '<object id="video" type="'+mtype+'" style="position: absolute; left: 700px; top: 300px; width: 320px; height: 180px;"><'+'/object>';
-  elem.innerHTML = ihtml;
+  var videoobj = document.getElementById('video');
+  if (videoobj == null) {
+    var ihtml = '<object id="video" type="'+mtype+'" style="position: absolute; left: 700px; top: 300px; width: 320px; height: 180px;"><'+'/object>';
+    // TODO(sunglim) : just switching data.
+    elem.innerHTML = ihtml;
+  } else {
+    videoobj.data = murl;
+    videoobj.type = mtype;
+  }
+  
   try {
     var videlem = document.getElementById('video');
     if (registerlistener) {
@@ -114,6 +123,7 @@ function playVideo(mtype, murl, registerlistener) {
   <li name="irthd">IRT test (HD, MP4)</li>
   <li name="tsstream">Live stream test (TS, no seeking!)</li>
   <li name="nacamar1">Nacamar live stream1 (TS, no seeking!)</li>
+  <li name="hls_video_live2">Wrong url</li>
   <li name="exit">Return to test menu</li>
 </ul>
 <div id="status" style="left: 700px; top: 480px; width: 400px; height: 200px;"></div>
