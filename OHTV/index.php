@@ -93,6 +93,7 @@ In case you have questions and/or comments, you can reach us at ohtv-dev@lge.com
 </div>
 <ul id="menu" class="menu" style="left: 100px; top: 100px;">
   <li name="device" descr="Get and Set Device Info.">Get device info</li>
+  <li name="device_sbs" descr="Device for SBS Pooq.">Device for SBS Pooq</li>
   <li name="tvcontrol" descr="Get properties of tvcontrol object.">Get TV Control properties</li>
   <li name="tvcontrolgetset" descr="getSource and setSource">Get and set TV Control source</li>
   <li name="network" descr="Get and Check Network">Get and Check Network</li>
