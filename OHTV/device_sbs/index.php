@@ -40,7 +40,7 @@ function runStep(name) {
     try {
       var loginId = deviceDom.IsLogin_LGTV();
       if (loginId !== null) {
-        showStatus(true, 'IsLogin_LGTV() returns ( ' + deviceDom.IsLogin_LGTV() + ' )');
+        showStatus(true, 'IsLogin_LGTV() returns ( ' + loginId + ' )');
       } else {
         showStatus(true, 'IsLogin_LGTV() returns ( null  )');
       }
@@ -50,14 +50,14 @@ function runStep(name) {
   } else if (name=='RequestLogin_LGTV') {
     try {
       var isSuccessToLogin = deviceDom.RequestLogin_LGTV();
-      showStatus(true, 'RequestLogin_LGTV() returns ( ' + isSuccessToLogin.RequestLogin_LGTV() + ' )');
+      showStatus(true, 'RequestLogin_LGTV() returns ( ' + isSuccessToLogin + ' )');
     } catch (e) {
       showStatus(false, 'cannot determine RequestLogin_LGTV');
     }
   } else if (name=='RequestSignup_LGTV') {
     try {
       var isSuccessToSignup = deviceDom.RequestSignup_LGTV();
-      showStatus(true, 'RequestSignup_LGTV() returns ( ' + isSuccessToSignup.RequestSignup_LGTV() + ' )');
+      showStatus(true, 'RequestSignup_LGTV() returns ( ' + isSuccessToSignup + ' )');
     } catch (e) {
       showStatus(false, 'cannot determine RequestSignup_LGTV');
     }
