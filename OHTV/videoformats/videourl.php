@@ -25,8 +25,7 @@ if ($id=='ardepg') {
 } else if ($id=='hls_video_live2') {
   echo 'application/vnd.apple.mpegurl#http://121.189.13.157/';
 } else if ($id=='hls_video_live') {
-  echo 'application/vnd.apple.mpegurl#http://121.189.13.157/http://vod.ohtv.kbs.gscdn.com/ohtv_zzim/_definst_/mp4:T2013-0557/T2013-0557_S000_20140221_PS-2014016415-01-000_03_M4H20600.mp4/playlist.m3u8?id=2101&si=3&secure=ODc3OTcxMjM2ZjUzOWRhOGY4N2FlMzNhYWQ3NTg1MzVmNGU3NTVkZTg0MTUzZmVhNTEyODc4N2E1Yjg0MjhhZTBlZGM4NTI1ZTZkNmM1ZDA0ZDViZWZlYWE3ZjViOGQyZDQ4ODNmNmY0NTRiMGRlMzllODllZTEwZDU3YzkxY2M1MzczMTc1ZDI1YjdiZDk2NGViMDk5ZTJhNjQyZDE4ZTVlOWVhOTBiNTZmMWFlZjlhOGMzYTk4YjY1NzVhNjE4MWQzODJmOTA4ZTA4NTUzNWVjY2FlZTNlMmYyM2I0YjVlOWM2ZjRjY2I1NzQyOWZhNGEyZjliNjYzZjQ2MTc1NjNjZmE1MjFmZDdlNTI1N2E3MzAzMmUyOWVlNTBiNjFkNGRhMTEyOWZmMDE5NzllYzBlNDQ3ZTI5YjdkMDBjYWMyODljMDEwMDVlZGMyZWQ0NDNiNTAwNWYwNGUzNzE0MTM3YTIwOTk4ZWQ5NjMyNTNlODFjN2VhMDljMGFlNjQ4ZjE1ODk3MWYzNDE0NWZjY2ZlMzdhOWZmZTA4NDgzNTI1NDAzN2EwNzNlMmVlYjc2ODlmMDQ4MTFjMTk5NzgwNDQyNzJkNGNmMDRkNjkzZjU5MWI5NDIxODEwN2M5NTljZTU1YTVmYmE2NmUxN2QyNWFhZTk0Y2RjYWY5MDQ1NTY=&csu=false&wowzaplaystart=1860000&wowzaplayduration=180000';
-  //echo 'video/mp4#http://fs3000.pooq.x-cdn.com:1935/pooqsbsvod/_etc_/sbsmedia/et/2018/et2018i0001400.mp4/playlist.m3u8?token=58254fbdd8bfcc01a1cdf146e7167fef&expr=530b505f&playstart=0&playduration=180';
+  echo 'application/vnd.apple.mpegurl#http://fs1023.pooq.x-cdn.com:1935/pooqsbsvod/_etc_/sbsmedia/cu/0470/cu0470i0013800.mp4/playlist.m3u8?token=2ae0b2fd4d4034cd85cbbd0e6edeb5ef&expr=53184986&playstart=0&playduration=180';
 } else {
   echo 'Unknown ID';
 }

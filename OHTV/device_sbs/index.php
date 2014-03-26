@@ -49,7 +49,7 @@ function runStep(name) {
     }
   } else if (name=='RequestLogin_LGTV') {
     try {
-      var isSuccessToLogin = deviceDom.RequestLogin_LGTV();
+      var isSuccessToLogin = deviceDom.RequestLogin_LGTV('nike_id','nike_password');
       showStatus(true, 'RequestLogin_LGTV() returns ( ' + isSuccessToLogin + ' )');
     } catch (e) {
       showStatus(false, 'cannot determine RequestLogin_LGTV');

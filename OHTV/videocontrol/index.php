@@ -73,6 +73,9 @@ function runStep(name) {
     gotoPos(150);
   } else if (name=='rewind') {
     setSpeed(-1);
+  } else if (name=='stop') {
+    var vid = document.getElementById('video');
+    vid.stop();
   }
 }
 function setSpeed(fact) {
@@ -152,6 +155,7 @@ function testPos(scnds) {
   <li name="gopos30">Test 7: go to position 00:30</li>
   <li name="gopos150">Test 8: go to position 02:30</li>
   <li name="rewind">Test 9: rewind (-1x)</li>
+  <li name="stop">Test 10: stop</li>
   <li name="exit">Return to test menu</li>
 </ul>
 <div id="status" style="left: 700px; top: 480px; width: 400px; height: 200px;"></div>
