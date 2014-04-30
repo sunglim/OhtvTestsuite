@@ -3,6 +3,7 @@ $ROOTDIR='..';
 require("$ROOTDIR/base.php");
 sendContentType();
 openDocument();
+$nike='nike';
 
 ?>
 <script type="text/javascript">
@@ -35,12 +36,9 @@ function runStep(name) {
   setInstr('Executing step...');
   showStatus(true, '');
   if (name=='getDuid') {
-    try {
-      var deviceDom = <?php echo $uagent ?>;
-//      showStatus(true, 'useragentreturns ( ' + deviceDom + ' )');
-    } catch (e) {
-      showStatus(false, 'cannot determine GetDUID ');
-    }
+    //var deviceDom = "<?php echo $_SERVER['HTTP_USER_AGENT'] ?>";
+    var deviceDom = navigator.userAgent;
+    showStatus(true, 'user agentreturns ( ' + deviceDom + ' )');
   } else if (name=='getFirmware') {
   }
 }
@@ -57,7 +55,7 @@ function runStep(name) {
 <div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">LG OHTV tests - Device</div>
 <div id="instr" class="txtdiv" style="left: 700px; top: 110px; width: 400px; height: 360px;"></div>
 <ul id="menu" class="menu" style="left: 100px; top: 100px;">
-  <li name="getDuid">Test 1: GetDUID</li>
+  <li name="getDuid">Test 1: Get Useragent</li>
   <li name="exit">Return to test menu</li>
 </ul>
 <div id="status" style="left: 700px; top: 480px; width: 400px; height: 200px;"></div>

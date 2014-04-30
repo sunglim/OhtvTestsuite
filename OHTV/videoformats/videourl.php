@@ -26,6 +26,8 @@ if ($id=='ardepg') {
   echo 'application/vnd.apple.mpegurl#http://121.189.13.157/';
 } else if ($id=='hls_video_live') {
   echo 'application/vnd.apple.mpegurl#http://fs1023.pooq.x-cdn.com:1935/pooqsbsvod/_etc_/sbsmedia/cu/0470/cu0470i0013800.mp4/playlist.m3u8?token=2ae0b2fd4d4034cd85cbbd0e6edeb5ef&expr=53184986&playstart=0&playduration=180';
+} else if ($id=='rtsp') {
+  echo 'video/mp4#rtsp://ebsandroid.nefficient.com/plus2tablet500k/tablet500k';
 } else {
   echo 'Unknown ID';
 }
