@@ -115,7 +115,7 @@ function playVideo(mtype, murl, registerlistener) {
 <div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">LG OHTV tests</div>
 <div id="instr" class="txtdiv" style="left: 700px; top: 110px; width: 400px; height: 360px;"></div>
 <ul id="menu" class="menu" style="left: 100px; top: 100px;">
-  <li name="hls_video_live">Unified Video (HLS)</li>
+  <li name="hls_video_live">EBS (HLS)</li>
   <li name="rtl">RTL video (MP4)</li>
   <li name="mpegts">Test video (TS)</li>
   <li name="audiomp3">Audio stream (MP3)</li>

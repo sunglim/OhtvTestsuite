@@ -61,6 +61,17 @@ function runStep(name) {
     } catch (e) {
       showStatus(false, 'cannot determine RequestSignup_LGTV');
     }
+  } else if (name=='RequestLoginPopup_LGTV') {
+    if (deviceDom.RequestLoginPopup_LGTV == null) {
+      showStatus(false, 'cannot determine RequestLoginPopup_LGTV');
+    } else {
+      try {
+        deviceDom.RequestLoginPopup_LGTV();
+        showStatus(true, 'Successfully call RequestLoginPopup_LGTV()');
+      } catch (e) {
+        showStatus(false, 'Error while calling RequestLoginPopup_LGTV');
+      }
+    }
   }
 }
 
@@ -79,6 +90,8 @@ function runStep(name) {
   <li name="IsLogin_LGTV">Test 1: IsLogin_LGTV</li>
   <li name="RequestLogin_LGTV">Test 2: RequestLogin_LGTV</li>
   <li name="RequestSignup_LGTV">Test 3: RequestSignup_LGTV</li>
+  <li name="">---------------------------------</li>
+  <li name="RequestLoginPopup_LGTV">Test 4: RequestLoginPopup_LGTV</li>
   <li name="exit">Return to test menu</li>
 </ul>
 <div id="status" style="left: 700px; top: 480px; width: 400px; height: 200px;"></div>

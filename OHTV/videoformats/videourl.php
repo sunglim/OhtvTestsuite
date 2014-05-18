@@ -7,7 +7,7 @@ $id = $_REQUEST['id'];
 if ($id=='ardepg') {
   echo 'video/mp4#http://itv.ard.de/video/trailer.php';
 } else if ($id=='mpegts') {
-  echo 'video/mpeg#http://192.168.1.63/1.ts';
+  echo 'video/mpeg#http://192.168.1.100/1.mp4';
 } else if ($id=='rtl') {
   echo 'video/mp4#http://bilder.rtl.de/tt_hd/trailer_hotelinspektor.mp4';
 } else if ($id=='audiomp3') {
@@ -25,7 +25,7 @@ if ($id=='ardepg') {
 } else if ($id=='hls_video_live2') {
   echo 'application/vnd.apple.mpegurl#http://121.189.13.157/';
 } else if ($id=='hls_video_live') {
-  echo 'application/vnd.apple.mpegurl#http://fs1023.pooq.x-cdn.com:1935/pooqsbsvod/_etc_/sbsmedia/cu/0470/cu0470i0013800.mp4/playlist.m3u8?token=2ae0b2fd4d4034cd85cbbd0e6edeb5ef&expr=53184986&playstart=0&playduration=180';
+  echo 'application/vnd.apple.mpegurl#http://ebsliveios.nefficient.com/fmradiotablet500k/tablet500k/fmradiotablet500k.index.m3u8';
 } else if ($id=='rtsp') {
   echo 'video/mp4#rtsp://ebsandroid.nefficient.com/plus2tablet500k/tablet500k';
 } else {
