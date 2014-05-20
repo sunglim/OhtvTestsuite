@@ -54,12 +54,9 @@ function menuInit() {
   menuSelect(0);
 }
 
+// TODO(sunglim): Rename variable name. Perhaps, index?.
 function menuSelect(i) {
-  if (i<=0) {
-    i = 0;
-  } else if (i>=opts.length) {
-    i = opts.length-1;
-  }
+  // TODO(sunglim): ASSET(i >= 0 || opts.length < opts.length);
   selected = i;
   var scroll = Math.max(0, Math.min(opts.length-13, selected-6));
   for (i=0; i<opts.length; i++) {
