@@ -1,3 +1,5 @@
+// Is this file necessary?
+//
 <?php
 $ROOTDIR='..';
 require("$ROOTDIR/base.php");
