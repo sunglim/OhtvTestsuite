@@ -62,7 +62,7 @@ function handleKeyCode(kc) {
     closeApp();
     return true;
   } else if (kc==VK_5) {
-    document.location.href = 'http://itv.mit-xperts.com/';
+    document.location.href = 'http://www.google.com/';
   }
   return false;
 }
