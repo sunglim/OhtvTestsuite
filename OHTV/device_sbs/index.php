@@ -88,9 +88,10 @@ function runStep(name) {
 <div id="instr" class="txtdiv" style="left: 700px; top: 110px; width: 400px; height: 360px;"></div>
 <ul id="menu" class="menu" style="left: 100px; top: 100px;">
   <li name="IsLogin_LGTV">Test 1: IsLogin_LGTV</li>
+  <li name="">13netcast-------------------------</li>
   <li name="RequestLogin_LGTV">Test 2: RequestLogin_LGTV</li>
   <li name="RequestSignup_LGTV">Test 3: RequestSignup_LGTV</li>
-  <li name="">---------------------------------</li>
+  <li name="">14webos-------------------------</li>
   <li name="RequestLoginPopup_LGTV">Test 4: RequestLoginPopup_LGTV</li>
   <li name="exit">Return to test menu</li>
 </ul>

@@ -108,7 +108,7 @@ function playVideo(mtype, murl, registerlistener) {
 
 </head><body>
 
-<div style="left: 0px; top: 0px; width: 1280px; height: 720px; background-color: #132d48;" />
+<div style="left: 0px; top: 0px; width: 1280px; height: 720px;" />
 
 <div id="vidcontainer" style="left: 0px; top: 0px; width: 1280px; height: 720px;"></div>
 

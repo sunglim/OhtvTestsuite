@@ -50,7 +50,9 @@ function registerKeyEventListener() {
 }
 
 function menuInit() {
-  opts = document.getElementById('menu').getElementsByTagName('li');
+  if (document.getElementById('menu')) {
+    opts = document.getElementById('menu').getElementsByTagName('li');
+  }
   menuSelect(0);
 }
 

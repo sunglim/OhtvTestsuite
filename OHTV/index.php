@@ -106,11 +106,11 @@ In case you have questions and/or comments, you can reach us at ohtv-dev@lge.com
   <li name="videoformats" descr="Check whether videos from various applications run on your device.">Streaming video/audio formats</li>
   <li name="playerevents" descr="Checks if streaming video playback sends correect events.">Streaming video playback events</li>
   <li name="useragent" descr="Validate user agent.">User agent</li>
+  <li name="capabilities" descr="Check the application/oipfCapabilities object.">OIPF Capabilities</li>
 <!-- TODO: We need to migrate belows.
   <li name="videoscale" descr="Exchange the video object on the page, switch between broadcast and streaming video. For both, scale the video object.">Video swapping and scaling</li>
   <li name="videobackground" descr="Broadcast video in background without own video object.">Broadcast in background</li>
   <li name="keyset" descr="Set keyset mask for user-input keys.">Keyset mask</li>
-  <li name="capabilities" descr="Check the application/oipfCapabilities object.">OIPF Capabilities</li>
   <li name="configuration" descr="Check the application/oipfConfiguration object.">OIPF Configuration</li>
   <li name="parentalcontrol" descr="Check the application/oipfParentalControlManager object.">OIPF Parental Control</li>
   <li name="navigatordebug" descr="Check access to the Navigator class and the Debug print API.">Navigator and Debug</li>

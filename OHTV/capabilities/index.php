@@ -4,6 +4,7 @@ require("$ROOTDIR/base.php");
 
 sendContentType();
 openDocument();
+  $uagent = $_SERVER['HTTP_USER_AGENT'];
 ?>
 <script type="text/javascript">
 //<![CDATA[
@@ -107,7 +108,6 @@ function runStep(name) {
 <div style="left: 0px; top: 0px; width: 1280px; height: 720px; background-color: #132d48;" />
 
 <object id="capobj" type="application/oipfCapabilities" style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px;"></object>
-<?php echo appmgrObject(); ?>
 
 <div class="txtdiv txtlg" style="left: 110px; top: 60px; width: 500px; height: 30px;">MIT-xperts HBBTV tests</div>
 <div id="instr" class="txtdiv" style="left: 700px; top: 110px; width: 400px; height: 360px;"></div>
