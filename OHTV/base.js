@@ -56,17 +56,19 @@ function menuInit() {
   menuSelect(0);
 }
 
-function menuSelect(i) {
-  if (i<=0) {
-    i = 0;
-  } else if (i>=opts.length) {
-    i = opts.length-1;
+// TODO(sunglim): Rename variable name. Perhaps, index?.
+function menuSelect(index) {
+  // TODO(sunglim): ASSET(i >= 0 || opts.length < opts.length);
+  if (index <=0) {
+    index = 0;
+  } else if (index>=opts.length) {
+    index = opts.length-1;
   }
-  selected = i;
+  selected = index;
   var scroll = Math.max(0, Math.min(opts.length-13, selected-6));
-  for (i=0; i<opts.length; i++) {
-    opts[i].style.display = (i>=scroll && i<scroll+13) ? 'block' : 'none';
-    opts[i].className = selected==i ? 'lisel' : '';
+  for (index=0; index<opts.length; index++) {
+    opts[index].style.display = (index>=scroll && index<scroll+13) ? 'block' : 'none';
+    opts[index].className = selected==index ? 'lisel' : '';
   }
 }
 
